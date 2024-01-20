@@ -1,12 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teahouse</title>
+    <title>Tea House</title>
+    <!-- tailwind and daisy ui -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google fonts manrope -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/bb3abda156.js" crossorigin="anonymous"></script>
+
+    <!-- custom color from tailwind link -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .font-manrope {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
 </head>
-<body>
+
+<body class="font-manrope max-w-[1140px] mx-auto border-4 border-green-500">
     <header>
+        <!-- banner section -->
+        <div class="hero ">
+            <div class="hero-content flex-col lg:flex-row">
+
+                <div class="flex-1  space-y-5">
+                    <h1 class="text-[#1C1C1C] text-[34px] lg:text-[56px] font-[800]">It's good
+                        <br>tea time at
+                        <br>The Tea House
+                    </h1>
+                    <p class="text-[#777] text-[13px] font-[500]">Provident cupiditate voluptatem et in. Quaerat fugiat
+                        ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                    <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-[#FFF]">Explore More <span><i class="fa-solid fa-location-arrow"></i></span></button>
+                </div>
+
+                <div class="flex-1 lg:mt-32">
+                    <img src="images/banner.png" class="w-[100%] rounded-lg " />
+                    <!--ratings badges container -->
+                    <div class="flex gap-2 lg:gap-4 justify-center items-center bottom-[40%] bg-[#FFF] drop-shadow-lg px-[8px]  lg:px-[17px] py-[12px] lg:py-[18px]  rounded-lg w-[50%] lg:w-[45%] -translate-y-16 lg:-translate-y-28 translate-x-10 ">
+
+                   
+                        <i class="fa-solid fa-star text-[20px] lg:text-[45px] text-[#FFC850]"></i>
+
+                        <div>
+                            <h3 class="text-[#1C1C1C] text-[14px] lg:text-[30px] font-[800]">5.00</h3>
+                            <p class="text-[#777] text-[10px] lg:text-[16px] font-[600]">Trust Pilot Ratings</p>
+                        </div>
+                      
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
 
     </header>
     <main>
@@ -14,8 +79,9 @@
     </main>
 
     <footer>
-        
+
     </footer>
-    
+
 </body>
+
 </html>
