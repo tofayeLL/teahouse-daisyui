@@ -38,8 +38,8 @@
     </style>
 </head>
 
-<body class="font-manrope max-w-[1140px] mx-auto border-4 border-green-500">
-    <header>
+<body class="font-manrope ">
+    <header class="max-w-[1140px] mx-auto">
         <!-- banner section -->
         <div class="hero ">
             <div class="hero-content flex-col lg:flex-row">
@@ -79,7 +79,7 @@
         </div>
 
     </header>
-    <main>
+    <main class="max-w-[1140px] mx-auto ">
 
         <!-- featured section -->
         <section class="p-4">
@@ -270,9 +270,69 @@
 
     </main>
 
-    <footer>
+    <footer class=" bg-base-200 p-4">
+        <!-- footer container -->
+       <div class=" lg:p-8  text-base-content max-w-[1140px] mx-auto ">
 
-    </footer>
+        <div class="flex gap-10 lg:gap-6 flex-col lg:flex-row justify-between lg:items-center my-[100px]">
+            <img src="images/cup.png" alt="" class="w-[40%] md:w-[20%] lg:w-[10%]">
+           <p class="lg:-translate-x-[11%] space-y-3">
+            <span>Ready to get strated?</span>
+            <button class="btn bg-gradient-to-r from-[#FF8938] to-[#F00] text-[#FFF]">Get Started</button>
+           </p>
+        </div>
+        <div class="grid gap-8 lg:gap-3 grid-cols-1 lg:grid-cols-4 ">
+            
+                <nav class="grid grid-cols-1 ">
+                    <header class="footer-title">Quick Links</header> 
+                    <a class="link link-hover">Home</a>
+                    <a class="link link-hover">About Us</a>
+                    <a class="link link-hover">Insurance</a>
+                    <a class="link link-hover">Privacy Policy</a>
+                  </nav> 
+            
+              <nav class="grid grid-cols-1 ">
+                <header class="footer-title">Our Service</header> 
+                <a class="link link-hover">Life Insurance</a>
+                <a class="link link-hover">Car Insurance</a>
+                <a class="link link-hover">Health Insurance</a>
+                <a class="link link-hover">House Insurance</a>
+              </nav> 
+              <nav class="grid grid-cols-1 ">
+                <header class="footer-title">Help</header> 
+                <a class="link link-hover">FAQs</a>
+                <a class="link link-hover">Contact Us</a>
+                <a class="link link-hover">Cookie policy</a>
+              </nav> 
+              <form class="grid grid-cols-1   ">
+                <header class="footer-title">Subscribe to our <br> newsletter</header> 
+                <fieldset class="form-control w-[60%] lg:w-[100%]  ">
+                  <div class="text-center">
+                    <input type="text" placeholder="enter your mail" class="border-b-2 pb-4 bg-transparent border-black  join-item w-[70%] lg:[w-100%]" /> 
+                    <button class="btn  bg-gradient-to-r from-[#FF8938] to-[#F00] text-[#FFF] rounded-full join-item"><span><i class="fa-solid fa-chevron-right text-[16px]"></i></span></button>
+                  </div>
+                  <div class="space-x-10 my-10 ">
+                    <span ><i class="fa-brands fa-facebook text-2xl"></i></span>
+                    <span><i class="fa-brands fa-twitter text-2xl" ></i></span>
+                    <span><i class="fa-brands fa-instagram text-2xl"></i></span>
+                  </div>
+                </fieldset>
+               
+                
+              </form>
+            </div>
+
+              <div class="text-center mt-[60px]">
+                    
+             <p class="text-[#494949] text[13px] font-[500]">Copyright © 2024 - All right reserved by ACME Industries Ltd</p>
+    
+        </div>
+
+       </div>
+              
+        
+       
+      </footer>
 
 </body>
 
